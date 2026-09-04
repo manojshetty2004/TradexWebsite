@@ -12,14 +12,14 @@ import {
   User,
   Github,
   Linkedin,
-  Code2,
-  Brain
+  Code2
 } from 'lucide-react';
 import { Asset, UserProfile } from '../types';
 import akshithImage from '../assets/images/akshith_profile_photo_1786270679797.jpg';
 import manojSImage from '../assets/images/manoj_s_profile_photo_1781868891671.png';
 import manojGowdaImage from '../assets/images/manoj_gowda_profile_photo.jpeg';
 import harshavardhanImage from '../assets/images/harshavardhan_profile_photo.jpeg';
+import tradexLogo from '../assets/images/tradex-logo.jpeg';
 
 interface SinglePageWebsiteProps {
   assets: Asset[];
@@ -103,8 +103,8 @@ export const SinglePageWebsite: React.FC<SinglePageWebsiteProps> = ({ assets }) 
             
             {/* Logo */}
             <div className="flex items-center space-x-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 to-emerald-500 flex items-center justify-center font-bold text-white shadow-md shadow-emerald-600/20">
-                <Brain className="w-5 h-5 text-white" />
+              <div className="w-10 h-10 rounded-xl bg-white overflow-hidden border border-slate-200 shadow-sm">
+                <img src={tradexLogo} alt="Tradex logo" className="w-full h-full object-contain" />
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-base text-slate-900 tracking-tight leading-none">
@@ -451,8 +451,8 @@ export const SinglePageWebsite: React.FC<SinglePageWebsiteProps> = ({ assets }) 
             </button>
 
             <div className="flex items-center space-x-3 border-b border-slate-100 pb-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center font-bold text-white text-sm">
-                <Brain className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 rounded-xl bg-white overflow-hidden border border-slate-200">
+                <img src={tradexLogo} alt="Tradex logo" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="font-bold text-sm text-slate-900">AI Investment App</h3>
