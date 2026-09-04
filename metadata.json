@@ -1,0 +1,6 @@
+{
+  "name": "AI Investment App",
+  "description": "An AI-powered investment application that automatically invests based on a user's selected risk profile. Download the official Android APK.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
